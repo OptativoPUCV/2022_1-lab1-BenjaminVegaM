@@ -37,12 +37,7 @@ arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
 
-void sumaNultimos(int a[], int n, int m, int * suma) {
-   for (int i = 0; i < n ; i++)
-   {
-      sumaN(*a, m);
-   }
-}
+//void sumaNultimos(int a[], int n, int m, int * suma) {}
 
 /*
 Ejercicio 3.
