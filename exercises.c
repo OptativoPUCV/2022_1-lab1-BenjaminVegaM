@@ -109,7 +109,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
    int lenght = strlen(a);
    for(int i = 0 ; i < lenght ; i++)
    {
-      c[i] = a[i] + b[i];
+      c->datos[i] = a->datos[i] + b->datos[i];
    }
 }
 
