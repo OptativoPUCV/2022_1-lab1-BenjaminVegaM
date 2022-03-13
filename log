@@ -287,3 +287,9 @@ Sun, 13 Mar 2022 16:00:33:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 23202ad
+Sun, 13 Mar 2022 16:01:15: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+bdd66e9
