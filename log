@@ -365,3 +365,26 @@ Sun, 13 Mar 2022 16:13:48:
  tests:  4|4
 total_score: 30/70
 bf4350c
+Sun, 13 Mar 2022 16:17:56: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'sumaV':
+exercises.c:109:24: error: passing argument 1 of 'strlen' from incompatible pointer type [-Werror=incompatible-pointer-types]
+  109 |    int lenght = strlen(a);
+      |                        ^
+      |                        |
+      |                        Vector *
+In file included from test.c:3:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h:64:37: note: expected 'const char *' but argument is of type 'Vector *'
+   64 |   size_t __cdecl strlen(const char *_Str);
+      |                         ~~~~~~~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:112:19: error: invalid operands to binary + (have 'Vector' and 'Vector')
+  112 |       c[i] = a[i] + b[i];
+      |              ~~~~ ^ ~~~~
+      |               |      |
+      |               Vector Vector
+cc1.exe: all warnings being treated as errors
+Compilation failed
+decda62

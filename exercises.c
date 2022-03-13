@@ -106,6 +106,11 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
 
+   int lenght = strlen(a);
+   for(int i = 0 ; i < lenght ; i++)
+   {
+      c[i] = a[i] + b[i];
+   }
 }
 
 /*
