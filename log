@@ -293,3 +293,30 @@ Sun, 13 Mar 2022 16:01:15:
  tests:  2|5
 total_score: 20/70
 bdd66e9
+Sun, 13 Mar 2022 16:04:32: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'asignarValor':
+exercises.c:90:11: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+   90 |    strcpy(*v[i].datos, valor);
+      |           ^~~~~~~~~~~
+      |           |
+      |           int
+In file included from test.c:3:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h:61:45: note: expected 'char * restrict' but argument is of type 'int'
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                         ~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from test.c:5:
+exercises.c:90:24: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+   90 |    strcpy(*v[i].datos, valor);
+      |                        ^~~~~
+      |                        |
+      |                        int
+In file included from test.c:3:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h:61:77: note: expected 'const char * restrict' but argument is of type 'int'
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6f4ef0c
