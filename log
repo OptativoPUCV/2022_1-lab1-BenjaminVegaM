@@ -405,3 +405,20 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h:64:37: note: expected 'con
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1d6328c
+Sun, 13 Mar 2022 16:22:31: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaV':
+exercises.c:109:25: error: passing argument 1 of 'strlen' from incompatible pointer type [-Werror=incompatible-pointer-types]
+  109 |    int lenght = strlen(a->datos);
+      |                        ~^~~~~~~
+      |                         |
+      |                         int *
+In file included from test.c:3:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h:64:37: note: expected 'const char *' but argument is of type 'int *'
+   64 |   size_t __cdecl strlen(const char *_Str);
+      |                         ~~~~~~~~~~~~^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+50ea98e
