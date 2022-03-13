@@ -107,7 +107,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
 
-   int lenght = sizeof a->datos / sizeof *a->datos;
+   int lenght = sizeof(a->datos) / sizeof (*a->datos);
    for(int i = 0 ; i < lenght ; i++)
    {
       c->datos[i] = a->datos[i] + b->datos[i];
