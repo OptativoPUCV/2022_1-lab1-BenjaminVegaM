@@ -152,3 +152,21 @@ exercises.c:58:18: error: 'arreglo' is used uninitialized in this function [-Wer
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3d80e83
+Sun, 13 Mar 2022 14:06:24: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c:8:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    8 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+test.c: In function 'test_suma_n':
+test.c:97:5: error: implicit declaration of function 'sumaNultimos' [-Werror=implicit-function-declaration]
+   97 |     sumaNultimos(a, 10, m, res);
+      |     ^~~~~~~~~~~~
+In file included from test.c:5:
+test.c: In function 'crearPersona':
+exercises.c:58:18: error: 'arreglo' is used uninitialized in this function [-Werror=uninitialized]
+   58 |    strcpy(arreglo->nombre, nombre);
+      |           ~~~~~~~^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+acf3893
